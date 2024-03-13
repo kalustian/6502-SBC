@@ -1,4 +1,5 @@
 ; EWOZ Extended Woz Monitor.
+;Using 68B50
 
 
 IN          = $0200          ;*Input buffer
