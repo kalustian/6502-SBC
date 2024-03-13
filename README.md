@@ -6,7 +6,10 @@ This repository contains a version Steve Wozniak's ROM monitor for the 6502.
 # Examine
 Examining a single memory location is done by typing the address and pressing enter:
 
-div 0200
+' Test1
+' Test 2 
+
+0200
 0200: 8A
 You can omit the leading zeros:
 
