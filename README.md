@@ -1,11 +1,7 @@
-Enhanced Woz Monitor for Rockwell R6501/R6511
+Enhanced Woz Monitor for Rockwell R65C02
 ---------------------------------------------
 
-This repository contains a version Steve Wozniak's ROM monitor for the 6502, ported to the Rockwell R6501 and R6511 single-chip microprocessors. These processors are 6502-like, but contain some significant differences:
-
-* Zero page is internal to the processor, and smaller than 256 bytes
-* I/O devices in zero page
-* Hardware stack in zero page, of limited size
+This repository contains a version Steve Wozniak's ROM monitor for the 6502, ported to the Rockwell R65C02
 
 ### Monitor Commands
 
