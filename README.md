@@ -89,7 +89,7 @@ Omitting the start address will continue from the last opened address:
 Jump to an address by specifying the address and following it with `R`:
 
 ```
-FD00R
+FD00**R**
 FD00: 78
 ```
 
