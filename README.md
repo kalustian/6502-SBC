@@ -5,7 +5,7 @@ This repository contains a version Steve Wozniak's ROM monitor for the 6502, por
 
 ### Monitor Commands
 
-eWoz provides the ability to examine memory, save data memory, jump to an address, and to load Intel HEX data. The following is a somewhat brief overview of the monitor's operation. 
+eWoz provides the ability to examine memory, save data to RAM, jump to an address, and to load Intel HEX data. The following are few of the monitor's commands. 
 
 ### Examine
 
