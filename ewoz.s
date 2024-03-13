@@ -1,5 +1,10 @@
 ; EWOZ Extended Woz Monitor.
-;Using 68B50. My SBC ROM is mapped at C000 - FFFF
+; Using 68B50. My SBC ROM is mapped at C000 - FFFF
+; To load an Intel Hex file, just type L and hit return.
+; Now just send a Text file that is in the Intel HEX Format just as you would send a text file for the Woz mon.
+; You can abort the transfer by hitting ESC.
+; After entering L, press enter. You will be prompted to start the Intel HEX transfer. If the file loads successfully, the message Intel Hex Imported OK. will be printed. If there are checksum errors, Intel Hex Imported with checksum error. will be printed.
+
 
 
 IN          = $0200          ;*Input buffer
