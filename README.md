@@ -11,6 +11,9 @@ Examining a single memory location is done by typing the address and pressing en
 
 You can omit the leading zeros:
 
+0200
+0200: 8A
+
 200
 0200: 8A
 
