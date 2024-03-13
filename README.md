@@ -1,5 +1,5 @@
-# heading 2
-Enhanced Woz Monitor for Rockwell R65C02
+
+# Enhanced Woz Monitor for Rockwell R65C02
 This repository contains a version Steve Wozniak's ROM monitor for the 6502.
 
 
