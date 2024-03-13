@@ -3,7 +3,7 @@
 This repository contains a version Steve Wozniak's ROM monitor for the 6502.
 
 
-Examine
+# Examine
 Examining a single memory location is done by typing the address and pressing enter:
 
 0200
@@ -38,7 +38,8 @@ You can also examine a range of memory:
 02D0: 70 40 30 00 00 00 00 00 01 92 00 04 00 00 00 02
 02E0: 45 44 40 04 00 20 00 00 00 01 00 0B 00 00 00 01
 02F0: 1D 00 01 28 00 00 08 08 00 10 00 00 00 00 10 01
-Deposit
+
+# Save
 One or more memory locations can be deposited as follows:
 
 0200: 00
@@ -57,14 +58,15 @@ Omitting the start address will continue from the last opened address:
 0200.021F
 0200: AA 55 AA 55 AA 55 AA 55 AA 55 AA 55 AA 55 AA 55
 0210: 30 44 30 41 30 30 30 30 37 30 30 30 37 30 31 30
-Jump to Address
+
+# Jump to Address or Run progran
 Jump to an address by specifying the address and following it with R:
 
 FD00R
 FD00: 78
 eWoz responds with the address and its contents, then does a JSR to the memory location provided. The program that is jumped to can RTS to get back to eWoz, provided that the stack has been preserved.
 
-Intel HEX Loader
+# Intel HEX Loader
 Intel HEX format files can use either DOS/Windows line endings (CR,LF) or UNIX line endings (LF only). Load Intel HEX files as follows:
 
 L
