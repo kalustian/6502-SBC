@@ -1,5 +1,5 @@
 ; EWOZ Extended Woz Monitor.
-;Using 68B50
+;Using 68B50. My SBC ROM is mapped at C000 - FFFF
 
 
 IN          = $0200          ;*Input buffer
