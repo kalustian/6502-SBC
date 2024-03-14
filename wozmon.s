@@ -1,4 +1,4 @@
-;  The WOZ Monitor for the Apple 1
+;  The Apple 1 WOZ Monitor
 ;  Written by Steve Wozniak in 1976
 ;  Port to 6502 SBC by Jeff Tranter
 ;  Added few codes (see * comments )  from the EWOZ. I like the 8 column output and the back space feature capability. 
