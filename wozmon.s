@@ -1,8 +1,9 @@
 ;  The Apple 1 WOZ Monitor
 ;  Written by Steve Wozniak in 1976
 ;  Port to 6502 SBC by Jeff Tranter
-;  Added few codes (see * comments )  from the EWOZ. I like the 8 column output and the back space feature capability. 
-;  Don't need the Intel HEX loader.
+;  Added few codes/features (see * comments ) from the EWOZ. I like the 8 column output and the "back space" feature capability. 
+;  Don't need the Intel HEX loader ( not included here ).
+;  Rev A - March, 2024
 
 
 
