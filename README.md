@@ -1,4 +1,4 @@
-Enhanced Woz Monitor for Rockwell R65C02
+Enhanced Woz Monitor for 65C02
 ---------------------------------------------
 
 This repository contains an extended version Steve Wozniak's ROM monitor for the 6502, ported to the Rockwell R65C02
@@ -13,14 +13,14 @@ Examining a single memory location is done by typing the address and pressing en
 
 ```
 0300
-0300: A9
+0300: F0
 ```
 
 You can omit the leading zeros:
 
 ```
 300
-0300: A9
+0300: F0
 ```
 
 Several addresses can be specified on a single line:
@@ -37,22 +37,22 @@ You can also examine a range of memory:
 
 ```
 0300.03FF
-0300: 9A B7 B0 B0 B0 D2 8D 30 30 31 46 46 0D 32 35 31
-0310: 30 44 30 41 30 30 30 30 37 30 30 30 37 30 31 30
-0320: 37 32 35 44 0D 38 36 35 36 33 36 42 37 33 37 35
-0330: 36 44 32 30 36 35 37 32 37 32 36 46 37 32 32 45
-0340: 30 44 30 41 30 30 30 44 30 41 34 42 0D FF FF FF
-0350: 00 00 00 FF FF 8D FF FF FF FF FF FF FF FF EF FF
-0360: FF FF FF FF FF EF FF FF FF FF FF EF FF FF FF AA
-0370: FF FF FF FF FF FF FF FF FF FF FF FF EF FF FF BB
+0300: 9A B7 B0 B0 B0 D2 8D 33 30 31 46 46 0D 32 35 31
+0310: 30 44 30 41 30 30 30 33 37 30 30 30 37 30 31 30
+0320: 47 32 35 44 0D 38 36 33 36 43 36 42 37 33 37 35
+0330: 46 44 32 30 36 35 37 32 37 32 36 46 37 32 32 45
+0340: 50 44 30 41 30 30 30 44 30 41 34 42 0D FF FF FF
+0350: 50 00 00 FF FF 8D FF FF FF FF FF FF FF FF EF FF
+0360: 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 00 AA
+0370: 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 BB
 0380: 20 89 04 40 00 80 02 10 40 00 00 01 00 80 00 04
 0390: 02 41 C8 00 00 00 20 40 10 00 00 02 00 00 02 12
-03A0: 40 00 00 08 00 00 00 12 00 20 00 00 40 01 00 00
-03B0: 10 80 00 04 00 00 00 00 00 01 00 00 00 00 00 00
-03C0: 20 14 21 10 00 00 00 00 00 00 10 08 00 00 00 00
-03D0: 70 40 30 00 00 00 00 00 01 92 00 04 00 00 00 02
-03E0: 45 44 40 04 00 20 00 00 00 01 00 0B 00 00 00 01
-03F0: 1D 00 01 28 00 00 08 08 00 10 00 00 00 66 10 55
+03A0: 10 00 00 08 00 00 00 12 00 20 00 00 40 01 00 00
+03B0: 10 80 00 04 00 00 00 10 A0 AA 00 00 00 00 00 00
+03C0: 20 14 21 10 00 00 00 10 00 00 10 08 00 00 00 00
+03D0: 20 40 30 00 00 00 00 00 01 92 00 04 00 00 00 02
+03E0: 35 44 40 04 00 20 00 03 30 01 00 0B 00 00 00 01
+03F0: 1D 00 01 28 00 00 08 08 30 13 00 03 03 56 1A BB
 ```
 
 ### Save
@@ -67,27 +67,18 @@ One or more memory locations can be saved as follows:
 eWoz responds with the address and the contents before the saved data. Multiple saved data follows the same syntax:
 
 ```
-0301: 11 22 33 44 55 66 77 88 99 AA BB CC DD EE FF
+0301: 11 22 31 24 55 66 77 88 99 AA BB CC DD EE FF
 0301: B7
 0300.030F
-0300: 00 11 22 33 44 55 66 77 88 99 AA BB CC DD EE FF
+0300: 00 11 21 33 44 55 16 77 88 99 AA BB CC DD EE FF
 ```
 
-Note that eWoz only responds with the pre-deposit contents of the first memory location.
+Note that eWoz only responds with the pre-saved contents of the first memory location.
 
-Omitting the start address will continue from the last opened address:
-
-```
-:BB 55 AA 55 AA 55 AA 55 AA 55 AA 55 AA 55 AA 55
-0300.031F
-0300: BB 55 AA 55 AA 55 AA 55 AA 55 AA 55 AA 55 AA 55
-0310: 30 44 30 41 30 30 30 30 37 30 30 30 37 30 31 30
-```
 
 ### Jump to Address
 
 Jump to an address by specifying the address and following it with `R`:
-
 
 ```
 CD00R
