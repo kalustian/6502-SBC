@@ -104,7 +104,7 @@ Intel Hex Imported OK.
 \
 
 ```
-2) You will be prompted to start the Intel HEX transfer. Copy-and-paste the content of the (plain text ASCII) .hex file produced by your compiler into the terminal. In the case of vasm65 it creates an a.out file. Look into the a.out file using a file editor.If the file loads successfully, the message `Intel Hex Imported OK.` will be printed. If there are checksum errors, `Intel Hex Imported with checksum error.` will be printed.
+2) You will be prompted to start the Intel HEX transfer. Copy-and-paste the content of the (plain text ASCII) .hex file produced by your compiler into the terminal. In the case of vasm65 it creates an a.out file. Look into the a.out file using a file editor. If the file loads successfully, the message `Intel Hex Imported OK.` will be printed. If there are checksum errors, `Intel Hex Imported with checksum error.` will be printed.
 
 
 
