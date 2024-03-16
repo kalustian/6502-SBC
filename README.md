@@ -89,7 +89,12 @@ eWoz responds with the address and its contents, then does a `JSR` to the memory
 
 ### Intel HEX Loader
 
-Intel HEX format files can use either DOS/Windows line endings (CR,LF) or UNIX line endings (LF only). Load Intel HEX files as follows:
+EWOZ provides the "l" (load Intel HEX) command to help test 6502 programs written on your PC and compiled there using a compiler such as VASM.
+Tell your compiler to produce Intel HEX output (in VASM, use the "-Fihex" command line parameter): ./vasm6502_oldstyle  -dotdir -Fihex yourfile.s this will created a new a.out file.
+
+Load Intel HEX  as follows: 
+
+1) Type "l" followed by ENTER on the command line:
 
 ```
 L
@@ -99,12 +104,9 @@ Intel Hex Imported OK.
 \
 
 ```
+2) You will be prompted to start the Intel HEX transfer. Copy-and-paste the content of the (plain text ASCII) .hex file produced by your compiler into the terminal. In the case of vasm65 it creates an a.out file. Look into the a.out file using a file editor.
+If the file loads successfully, the message `Intel Hex Imported OK.` will be printed. If there are checksum errors, `Intel Hex Imported with checksum error.` will be printed.
 
-EWOZ provides the "l" (load Intel HEX) command to help test 6502 programs written on your PC and compiled there using a compiler such as VASM:
 
-Tell your compiler to produce Intel HEX output (in VASM, use the "-Fihex" command line parameter).
-Type "l" followed by ENTER on the command line
-Copy-and-paste the content of the (plain text ASCII) .hex file produced by your compiler into the terminal.
 
-After entering `L`, press enter. You will be prompted to start the Intel HEX transfer. If the file loads successfully, the message `Intel Hex Imported OK.` will be printed. If there are checksum errors, `Intel Hex Imported with checksum error.` will be printed.
 
