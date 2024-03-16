@@ -94,7 +94,7 @@ Tell your compiler to produce Intel HEX output (in VASM, use the "-Fihex" comman
 
 Load Intel HEX  as follows: 
 
-1) Type "l" followed by ENTER on the command line:
+1) Type "L" followed by ENTER on the command line:
 
 ```
 L
