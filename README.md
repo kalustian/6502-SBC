@@ -89,7 +89,7 @@ eWoz responds with the address and its contents, then does a `JSR` to the memory
 
 ### Intel HEX Loader
 
-EWOZ provides the "l" (load Intel HEX) command to help test 6502 programs written on your PC and compiled there using a compiler such as VASM.
+EWOZ provides the "L" (load Intel HEX) command to help test 6502 programs written on your PC and compiled there using a compiler such as VASM.
 Tell your compiler to produce Intel HEX output (in VASM, use the "-Fihex" command line parameter): ./vasm6502_oldstyle  -dotdir -Fihex yourfile.s this will created a new a.out file.
 
 Load Intel HEX  as follows: 
