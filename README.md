@@ -100,4 +100,11 @@ Intel Hex Imported OK.
 
 ```
 
+EWOZ provides the "l" (load Intel HEX) command to help test 6502 programs written on your PC and compiled there using a compiler such as VASM:
+
+Tell your compiler to produce Intel HEX output (in VASM, use the "-Fihex" command line parameter).
+Type "l" followed by ENTER on the command line
+Copy-and-paste the content of the (plain text ASCII) .hex file produced by your compiler into the terminal.
+
 After entering `L`, press enter. You will be prompted to start the Intel HEX transfer. If the file loads successfully, the message `Intel Hex Imported OK.` will be printed. If there are checksum errors, `Intel Hex Imported with checksum error.` will be printed.
+
