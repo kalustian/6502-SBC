@@ -3,7 +3,7 @@
 ; To load an Intel Hex file, just type L and hit return. Now just send a Text file that is in the Intel HEX Format just as you would send a text file for the Woz mon.
 ; After entering L, press enter. You will be prompted to start the Intel HEX transfer. If the file loads successfully, the message Intel Hex Imported OK. will be printed. If there are checksum errors, Intel Hex Imported with checksum error. will be printed.
 ; You can abort the transfer by hitting ESC.
-; NOTE: MOD8CHK to limit your dump to 16 bytes maximum per line. To see 8 bytes per line change make AND = #$07.
+; NOTE: MOD8CHK limits your dump to 16 bytes maximum per line. To see 8 bytes per line change make AND = #$07.
 
 IN          = $0200          ;*Input buffer
 XAML        = $24            ;*Index pointers
