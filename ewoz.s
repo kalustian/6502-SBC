@@ -52,7 +52,7 @@ RESET:
                 JSR     SHWMSG         ;* Show Welcome
                 LDA     #$0D
                 JSR     ECHO           ;* New line.
-\
+
 SOFTRESET:      LDA     #$9B	       ;* Auto escape.
 
 ;-------------------------------------------------------------------------
