@@ -32,10 +32,7 @@ RESET:
 		CLI
 
 ; Initialise ACIA 6850
-                LDA     #%00010101     ; bit 7 clear = no interrrupts
-                                       ; bit 6 & 5 = transmitting RTS interrupt disabled
-                                       ; bit 4,3 & 2 = 8 bits, 1 stop and no parity
-                                       ; bit 1 & 0 = divide by 16 = 115200 bps
+                LDA     #$15           ; Set ACIA to 8N1 and divide by 16 clock: 115200 bps
                 STA     CR_6850        ; write control word
 		LDA	#$0D
 		JSR	ECHO		; New line.
