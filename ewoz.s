@@ -34,7 +34,7 @@ RESET:
 ; Initialise ACIA 6850
                 LDA     #$15           ; Set ACIA to 8N1 and divide by 16 clock: 115200 bps
                 STA     CR_6850        ; write control word
-		LDA	#$0D
+SOFTRESET:	LDA	#$0D
 		JSR	ECHO		; New line.
                 LDA     #<MSG1
                 STA     MSGL     
@@ -54,7 +54,7 @@ RESET:
                 JSR     ECHO           ;* New line.
 
 
-SOFTRESET:      LDA     #$9B
+;SOFTRESET:      LDA     #$9B
 
 
 ;-------------------------------------------------------------------------
