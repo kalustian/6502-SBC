@@ -21,8 +21,7 @@ CRC         = $2F
 CRCCHECK    = $30
 
 CR_6850         =     $A000  	       ; Control register for writing and status register for reading
-DR_6850 	=     $A001  	       ; RX data when reading and TXB data when sending
-
+DR_6850 	=     $A001  	       ; Data Register.
 
             ORG     $C000
 
