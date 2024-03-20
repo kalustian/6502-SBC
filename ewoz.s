@@ -20,7 +20,7 @@ COUNTER     = $2E
 CRC         = $2F
 CRCCHECK    = $30
 
-CR_6850         =     $A000  	       ; Control register for writing and status register for reading
+CR_6850         =     $A000  	       ; Control register for writing and status register.
 DR_6850 	=     $A001  	       ; Data Register.
 
             ORG     $C000
