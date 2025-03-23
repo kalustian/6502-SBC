@@ -107,5 +107,18 @@ Intel Hex Imported OK.
 2) You will be prompted to start the Intel HEX transfer. Copy-and-paste the content of the (plain text ASCII) .hex file produced by your compiler into the terminal. In the case of vasm65 it creates an a.out file. Look into the a.out file using a file editor. If the file loads successfully, the message `Intel Hex Imported OK.` will be printed. If there are checksum errors, `Intel Hex Imported with checksum error.` will be printed.
 
 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
 
 
