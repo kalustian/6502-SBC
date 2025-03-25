@@ -53,7 +53,7 @@ RESET:          CLD             ; Clear decimal arithmetic mode.
 ; Initialise ACIA 6850
 
                 LDY #$7F
-                LDA #$16        ; Set ACIA to 8N1 and divide by 64 clock --> 28800 bps
+                LDA #$16        ; Set ACIA to 8N1 and divide by 64 clock --> 28800 bps. Chage it to $15 to have 115200 bps.
                 STA ACIAControl
                 LDA	#$0D
 		JSR	ECHO	; New line.
