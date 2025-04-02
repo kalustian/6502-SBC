@@ -7,6 +7,7 @@
 ; NOTE: MOD8CHK limits your dump to 16 bytes maximum per line. To see 16 bytes per line change AND $0F.
 
 ; Changed baud rate from 115200 to 28800. At 115.2 bps characters screen dumping became erratic when using with Grant Searle video output. 
+; ** Added Disassemble to be imported
 
 ;***************************************************  
 ;*   Note my SBC  HW system memory map as:         *
@@ -381,7 +382,7 @@ GETCHAR:    LDA ACIAControl     ; See if we got an incoming char
             RTS
 
 
-		.include "disasm.s"		 ;** remove if you want to run ewoz without the diassembler code.
+		.include "disasm.s"		 ; 
   
 ;-------------------------------------------------------------------------
 
