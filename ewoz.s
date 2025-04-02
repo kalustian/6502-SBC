@@ -128,6 +128,12 @@ NEXTITEM:       LDA IN,Y        ; Get character.
             	CMP #$CC        ; "L"?
             	BEQ LOADINT     ; Yes, Load Intel Code.
 
+            	CMP #'U'+$80    ; "U"? $5D + $80  	  ** remove if you want to run ewoz without the diassembler code.
+            	BNE SKIP        ; No, continue      	  ** remove if you want to run ewoz without the diassembler code.
+            	JMP START       ; Yes, call disassembler  ** remove if you want to run ewoz without the diassembler code.
+	     
+SKIP:				; ** remove if you want to run ewoz without the diassembler code.
+
                 STX L           ; $00->L.
                 STX H           ;  and H.
                 STY YSAV        ; Save Y for comparison.
@@ -375,6 +381,8 @@ GETCHAR:    LDA ACIAControl     ; See if we got an incoming char
             RTS
 
 
+		.include "disasm.s"		 ;** remove if you want to run ewoz without the diassembler code.
+  
 ;-------------------------------------------------------------------------
 
 MSG1:      .byte "Welcome to EWOZ 1.0 - To load Intel HEX file type 'L'",0
